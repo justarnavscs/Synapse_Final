@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Synapse Nexus</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
@@ -77,6 +78,44 @@
       25% { transform: translateX(-6px); }
       50% { transform: translateX(6px); }
       75% { transform: translateX(-4px); }
+    }
+
+    /* Mobile Responsive Adjustments */
+    @media only screen and (max-width: 600px) {
+      .panel {
+        width: 90%;
+        margin: 5vh auto;
+        padding: 1.5rem;
+      }
+      
+      input, button {
+        padding: 10px;
+        font-size: 0.9rem;
+      }
+      
+      h2 {
+        font-size: 1.2rem;
+      }
+      
+      #backdrop {
+        animation: swirl 40s ease-in-out infinite;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      .panel {
+        padding: 1rem;
+      }
+      
+      input, button {
+        margin: 8px 0;
+        padding: 8px;
+        font-size: 0.85rem;
+      }
+      
+      .status {
+        font-size: 0.8rem;
+      }
     }
   </style>
 </head>
