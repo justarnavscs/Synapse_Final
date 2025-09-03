@@ -259,7 +259,7 @@ function handleLogin() {
       localStorage.setItem("pin_" + cleanUser, cleanPin);
       localStorage.setItem("lastUser", cleanUser);
       status.innerText = "✅ PIN set. Login successful!";
-      setTimeout(() => window.location.href = "qwerty.html", 800);
+      setTimeout(() => window.location.href = "launcher.html", 800);
     } else {
       status.innerText = "❌ Please enter a 4-digit PIN";
       shakePanel();
