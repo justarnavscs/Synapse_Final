@@ -239,7 +239,7 @@ function handleLogin() {
       localStorage.setItem("lastUser", cleanUser);
       status.innerText = "✅ PIN reset successful!";
       recoveryMode = false;
-      setTimeout(() => window.location.href = "qwerty.html", 800);
+      setTimeout(() => window.location.href = "launcher.html", 800);
     } else {
       status.innerText = "❌ Enter a valid 4-digit new PIN";
       shakePanel();
